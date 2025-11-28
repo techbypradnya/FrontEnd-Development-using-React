@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Combining CSS Selectors</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      h1,h2{
+        color:blueviolet
+      }
+      div>.done{
+        color:firebrick
+      }
+      .list>li{
+        color:blue;
+      }
+    body>ul>.done{
+      font-size:0.5rem ;
+    }    
+     div>ul>.done{
+      color: green;
+     }
+      
+
+    </style>
+  </head>
+  <!-- Don't change any of the HTML code! -->
+  <!-- TODO 1: Set the color of h1 & h2 to blueviolet -->
+  <!-- TODO 2: Set the color of <p> to firebrick color -->
+  <!-- TODO 3: Set the color of  all <li> to blue -->
+  <!-- TODO 4: Set the color of 2nd & 3rd <li> to green -->
+  <!-- Set the font size of <p class="done">Other items</p> to 0.5rem   -->
+  <body>
+    <h1>To Do List</h1>
+    <h2>Monday</h2>
+    <div class="box">
+      <p class="done">Do these things today!</p>
+      <ul class="list">
+        <li>Wash Clothes</li>
+        <li class="done">Read</li>
+        <li class="done">Maths Questions</li>
+      </ul>
+    </div>
+
+    <ul>
+      <p class="done">Other items</p>
+    </ul>
+    <p>The best preparation for tomorrow is doing your best today.</p>
+  </body>
+</html>
